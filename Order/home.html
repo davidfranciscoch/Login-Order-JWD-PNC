@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daftar Menu Makanan</title>
+        <link rel="stylesheet" href="home.css" />
+    </head>
+    <body>
+        <h1>Daftar Menu Makanan</h1>
+
+        <div class="menu-container">
+            <div class="menu-item" onclick="addToCart('Nasi Goreng', 25000)">
+                Nasi Goreng - Rp 25,000
+            </div>
+            <div class="menu-item" onclick="addToCart('Mie Goreng', 22000)">
+                Mie Goreng - Rp 22,000
+            </div>
+            <div class="menu-item" onclick="addToCart('Ayam Bakar', 35000)">
+                Ayam Bakar - Rp 35,000
+            </div>
+            <div class="menu-item" onclick="addToCart('Ikan Bakar', 30000)">
+                Ikan Bakar - Rp 30,000
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <h2>Keranjang Belanja</h2>
+            <div id="cartItems"></div>
+            <p>Total Harga: <span id="totalPrice">Rp 0</span></p>
+            <button onclick="resetCart()">Reset</button>
+        </div>
+
+        <script src="menu.js"></script>
+    </body>
+</html>
